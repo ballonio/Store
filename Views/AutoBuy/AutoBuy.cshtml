@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Purchase</title>
+</head>
+<body>
+    <div>
+        @using (Ajax.BeginForm("AutoBuy", new AjaxOptions { UpdateTargetId = "result" }))
+        {
+            <input type="submit" value="Start" />
+        }
+        <div id="result"></div>
+    </div>
+    @Scripts.Render("~/scripts/jquery-1.10.2.min.js")
+    @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.min.js")
+</body>
+</html>
+

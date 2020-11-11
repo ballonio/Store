@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Purchase</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.ItemId" name="ItemId" />
+            <table>
+                <tr>
+                    <td><p>Enter your name: </p></td>
+                    <td><input type="text" name="ClientName" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter the quanity: </p></td>
+                    <td><input type="text" name="Quanity" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Buy" /> </td><td></td></tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+</html>
