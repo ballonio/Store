@@ -52,7 +52,7 @@ namespace Store.Controllers
                 i--;
             }
             ViewBag.Message = order.ClientName + order.Price + order.Quanity;
-            return PartialView();//test
+            return PartialView();//added branch
         }
     }
 }
